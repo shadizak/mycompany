@@ -10,11 +10,33 @@ function getAge(){
     fullName = prompt ("Enter Your Age");
     document.write('<h3> Age: '+fullName+'</h3>');
 }
+
 function getEmail(){
     fullName = prompt ("Enter Your Email");
     document.write('<h3>Email: '+fullName+'</h3>');
 }
  
+function userOrder(){
+  var userOrder = prompt('What would you like to order? hotel or house');
+  var item = '';
+
+  while(userOrder !== 'hotel' && userOrder !== 'house' ){
+    userOrder = prompt('What would you like to order? hotel or house');
+  }
+
+  var itemNum = prompt('haw many item do you want to print');
+  for(var i = 0; i< itemNum;i++){
+    if(userOrder === 'hotel'){
+       
+      item = item + '<img src="images/hotel.png" >';
+
+    }else if(userOrder === 'house'){
+     
+      item = item + '<img src="images/h.jpg" >';
+    }
+  }
+  return item;
+}
 
 // if (hourNow > 18) {
 //     greeting = 'Good evening, ';
