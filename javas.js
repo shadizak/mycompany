@@ -3,11 +3,17 @@ var fullName
 
 function getName(){
     fullName = prompt ("Enter Your Full Name");
-    document.write('<h3>'+fullName+'</h3>');
-
-    
+    document.write('<h3> Name: '+fullName+'</h3>');
 }
 
+function getAge(){
+    fullName = prompt ("Enter Your Age");
+    document.write('<h3> Age: '+fullName+'</h3>');
+}
+function getEmail(){
+    fullName = prompt ("Enter Your Email");
+    document.write('<h3>Email: '+fullName+'</h3>');
+}
  
 
 // if (hourNow > 18) {
